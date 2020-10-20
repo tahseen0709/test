@@ -1,0 +1,833 @@
+Target,Source,Macro,Script,Notes
+MDDLoadLog,"M167
+",MM167A,bel.scr,Insert
+MDDLoadLog,MDDError,MM167A,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.Artikel,MM167A,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.Filiale,MM167B,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.FakturaTyp,MM167C,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.FakturaSubTyp,MM167D,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.GenossKalender,MM167E,bel.scr,Insert
+MDDLoadLog,MDD{GM}Prod.HistoryBelieferung,MM167F,bel.scr,Insert
+M167,Shipment FILE FASTLOAD,FastLoad,bel.scr,Insert
+M167,MDD{GM}Prod.Artikel,MM167A,bel.scr,Insert
+M167,MDD{GM}Prod.Filiale,MM167B,bel.scr,Insert
+M167,MDD{GM}Prod.FakturaTyp,MM167C,bel.scr,Insert
+M167,MDD{GM}Prod.FakturaSubTyp,MM167D,bel.scr,Insert
+M167,MDD{GM}Prod.GenossKalender,MM167E,bel.scr,Insert
+M167,MDD{GM}Prod.HistoryBelieferung,MM167F,bel.scr,Insert
+MDD{GM}LOAD.MinBelDatum,MDD{GM}Load.M167,MM167G,bel.scr,Insert
+MDD{GM}Prod.Artikel,MDD{GM}Load.MinBelDatum,MM167G,bel.scr,Update
+MDD{GM}Load.M167_MargeSatz,"MDD{GM}Load.M167
+",MM167G,bel.scr,Insert
+MDD{GM}Load.M167_MargeSatz,MDD{GM}Prod.Artikel,MM167G,bel.scr,Insert
+MDD{GM}Load.M167_MargeSatz,MDD{GM}Appl.ArtikelPreisMRGKST,MM167G,bel.scr,Insert
+M167_2,MDD{GM}Load.M167_MargeSatz,MM167G,bel.scr,Insert
+M167_2,"MDD{GM}Load.M167
+",MM167G,bel.scr,Insert
+M167_2,MDD{GM}Prod.Artikel,MM167G,bel.scr,Insert
+M167_2,MDD{GM}Appl.ArtikelVemenge,MM167G,bel.scr,Insert
+BEL_WGR_Wanderer,M167_2,MM167G,bel.scr,Insert
+BEL_Mon_Wanderer,M167_2,MM167G,bel.scr,Insert
+BEL_WGR_Mon_Wanderer,MDD{GM}Load.BEL_WGR_Wanderer,MM167G,bel.scr,Insert
+BEL_WS_Wanderer,MDD{GM}Load.BEL_WGR_Wanderer,MM167G,bel.scr,Insert
+BEL_Bereich_Wanderer,"M167_2
+",MM167G,bel.scr,Insert
+BEL_Bereich_Wanderer,MDD{GM}Prod.Artikel,MM167G,bel.scr,Insert
+BEL_Bereich_Mon_Wanderer,BEL_Bereich_Wanderer,MM167G,bel.scr,Insert
+BEL_Familie_Wanderer,"M167_2
+",MM167G,bel.scr,Insert
+BEL_Familie_Wanderer,MDD{GM}Prod.Artikel,MM167G,bel.scr,Insert
+BEL_Familie_Mon_Wanderer,BEL_Familie_Wanderer,MM167G,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,"MDD{GM}Load.M167_2
+
+",MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Prod.Artikel,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Prod.Filiale,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Prod.InfoBestand,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,"MDD{GM}Load.M167_2
+
+",MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Prod.Artikel,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Prod.Filiale,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Prod.InfoBestand,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,"MDD{GM}Load.M167_2
+
+",MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,MDD{GM}Prod.Artikel,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,MDD{GM}Prod.Filiale,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,MDD{GM}Prod.InfoBestand,MSTKC_DELIVERY_LOAD_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Load.STKC_EP_EVENT,MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,"MDD{GM}Load.STKC_EP_EVENT
+",MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Prod.HistoryEP,MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,"MDD{GM}Load.STKC_EP_EVENT
+",MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,"MDD{GM}Prod.HistoryEP
+",MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,MDD{GM}Prod.Jahrmonat,MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_EVENT,MDD{GM}Load.STKC_EP_HIST,MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,MDD{GM}Load.STKC_EP_HIST,MSTKC_CALC_EP,bel.scr,Insert
+MDD{GM}Prod.HistoryEP,MDD{GM}Load.STKC_EP_HIST,MSTKC_CALC_EP,bel.scr,Delete
+MDD{GM}Load.STKC_VP_EVENT,MDD{GM}Load.STKC_VP_EVENT,MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,"MDD{GM}Load.STKC_VP_EVENT
+",MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,MDD{GM}Prod.HistoryVPSoll,MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,"MDD{GM}Load.STKC_VP_EVENT
+",MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Prod.HistoryVPSoll,MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Prod.Jahrmonat,MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_EVENT,"MDD{GM}Load.STKC_VP_HIST
+",MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Load.STKC_VP_HIST,MSTKC_CALC_VP,bel.scr,Insert
+MDD{GM}Prod.HistoryVPSoll,MDD{GM}Load.STKC_VP_HIST,MSTKC_CALC_VP,bel.scr,Delete
+MDD{GM}Load.STKC_EP_HIST,"MDD{GM}Prod.HistoryEP
+",MSTKC_EP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,MDD{GM}Prod.Jahrmonat,MSTKC_EP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,MDD{GM}Load.STKC_EVENT_COLLECT,MSTKC_EP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_EP_HIST,MDD{GM}Load.STKC_EP_HIST,MSTKC_EP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,"MDD{GM}Load.STKC_EP_HIST
+",MSTKC_EP_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Prod.HistoryBestand,MSTKC_EP_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,"MDD{GM}Prod.HistoryVPSoll
+",MSTKC_VP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Prod.Jahrmonat,MSTKC_VP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Load.STKC_EVENT_COLLECT,MSTKC_VP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_VP_HIST,MDD{GM}Load.STKC_VP_HIST,MSTKC_VP_EVENTS_PRE,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,"MDD{GM}Load.STKC_VP_HIST
+",MSTKC_VP_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Prod.HistoryBestand,MSTKC_VP_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,"MDD{GM}Prod.HistoryBestandIst
+",MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,MDD{GM}Load.STKC_EVENT_COLLECT,MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,MDD{GM}Prod.JahrMonat,MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,"MDD{GM}Prod.HistoryBestandKorr
+",MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,MDD{GM}Load.STKC_STOCK_CORR,MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,"MDD{GM}Load.STKC_EVENT_COLLECT
+",MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_COLLECT,MDD{GM}Load.STKC_STOCK_CORR,MSTKC_CORR_COLLECT,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT,"MDD{GM}Load.STKC_EVENT_COLLECT
+",MSTKC_DISTINCT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT,MDD{GM}Load.STKC_STOCK_CORR,MSTKC_DISTINCT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK,"MDD{GM}Prod.HistoryBestand
+",MSTKC_FETCH_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK,MDD{GM}Load.STKC_EVENT,MSTKC_FETCH_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK,MDD{GM}Prod.JahrMonat,MSTKC_FETCH_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_2,"MDD{GM}Load.STKC_EVENT
+",MSTKC_SPLIT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_2,MDD{GM}Load.STKC_STOCK,MSTKC_SPLIT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_3,"MDD{GM}Load.STKC_EVENT
+",MSTKC_SPLIT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT_3,MDD{GM}Load.STKC_EVENT_2,MSTKC_SPLIT_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,MDD{GM}Load.STKC_STOCK,MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,"MDD{GM}Load.STKC_STOCK
+",MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,MDD{GM}Load.STKC_EVENT_2,MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,"MDD{GM}Load.STKC_EVENT_3
+",MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,MDD{GM}Prod.JahrMonat,MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_2,MDD{GM}Load.STKC_EVENT_3,MSTKC_ADD_STOCK,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT,MDD{GM}Load.STKC_EVENT_2,MSTKC_JOIN_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT,MDD{GM}Load.STKC_EVENT_3,MSTKC_JOIN_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_EVENT,MDD{GM}Load.STKC_STOCK_2,MSTKC_JOIN_EVENTS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK,"MDD{GM}Load.STKC_STOCK_2
+",MSTKC_STOCK_DAYS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK,MDD{GM}Load.STKC_EVENT,MSTKC_STOCK_DAYS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_DELTA,"MDD{GM}Load.STKC_EVENT
+",MSTKC_STOCK_DELTAS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_DELTA,MDD{GM}Load.STKC_STOCK,MSTKC_STOCK_DELTAS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_DELTA,"MDD{GM}Load.STKC_STOCK
+",MSTKC_STOCK_DELTAS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_DELTA,MDD{GM}Load.STKC_EVENT,MSTKC_STOCK_DELTAS,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,"MDD{GM}Load.STKC_EVENT
+",MSTKC_CORR_COMPLETE,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,MDD{GM}Load.STKC_STOCK_CORR,MSTKC_CORR_COMPLETE,bel.scr,Insert
+MDD{GM}Load.STKC_STOCK_CORR,"MDD{GM}Load.STKC_STOCK
+",MSTKC_CORR_COMPLETE,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK,"MDD{GM}Load.STKC_STOCK
+",MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK,MDD{GM}Load.STKC_STOCK_DELTA,MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK,MDD{GM}Prod.HistoryEP,MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK,MDD{GM}Prod.HistoryVPSoll,MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK_CORR,"MDD{GM}Load.STKC_STOCK_CORR
+",MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK_CORR,MDD{GM}Prod.HistoryEP,MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Load.STKC_CALC_STOCK_CORR,MDD{GM}Prod.HistoryVPSoll,MSTKC_CALC_HISTORY,bel.scr,Insert
+MDD{GM}Prod.HistoryBelieferung,M167_2,MM167H,bel.scr,Insert
+MDD{GM}Prod.BEL_Bereich_Mon_SUM,MDD{GM}Load.BEL_Bereich_Mon_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Bereich_SUM,MDD{GM}Load.BEL_Bereich_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_Mon_SUM,MDD{GM}Load.BEL_Familie_Mon_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_SUM,MDD{GM}Load.BEL_Familie_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_SUM,MDD{GM}Load.BEL_WGR_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Mon_SUM,MDD{GM}Load.BEL_Mon_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_Mon_SUM,MDD{GM}Load.BEL_WGR_Mon_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WS_SUM,MDD{GM}Load.BEL_WS_Wanderer,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Bereich_Mon_SUM,"MDD{GM}Load.BEL_Bereich_Mon_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Bereich_Mon_SUM,MDD{GM}Prod.BEL_Bereich_Mon_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Bereich_SUM,"MDD{GM}Load.BEL_Bereich_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Bereich_SUM,MDD{GM}Prod.BEL_Bereich_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_Mon_SUM,"MDD{GM}Load.BEL_Familie_Mon_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_Mon_SUM,MDD{GM}Prod.BEL_Familie_Mon_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_SUM,"MDD{GM}Load.BEL_Familie_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Familie_SUM,MDD{GM}Prod.BEL_Familie_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_SUM,"MDD{GM}Load.BEL_WGR_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_SUM,MDD{GM}Prod.BEL_WGR_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Mon_SUM,"MDD{GM}Load.BEL_Mon_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_Mon_SUM,MDD{GM}Prod.BEL_Mon_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_Mon_SUM,"MDD{GM}Load.BEL_WGR_Mon_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WGR_Mon_SUM,MDD{GM}Prod.BEL_WGR_Mon_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WS_SUM,"MDD{GM}Load.BEL_WS_Wanderer
+",MM167H,bel.scr,Update
+MDD{GM}Prod.BEL_WS_SUM,MDD{GM}Prod.BEL_WS_SUM,MM167H,bel.scr,Update
+MDD{GM}Prod.HistoryBestand,MDD{GM}Load.STKC_CALC_STOCK,MM167H,bel.scr,Delete
+MDD{GM}Prod.HistoryBestandKorr,MDD{GM}Load.STKC_CALC_STOCK_CORR,MM167H,bel.scr,Delete
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M167,MM167H,bel.scr,Insert
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M167_2,MM167H,bel.scr,Insert
+MDD{GM}Appl.TransferMDDStatus,MDD{GM}Appl.TransferMDDStatus,MDD{GM}Load.MP821A_PRE,abv.scr,Updating certain fields in the target table
+MDD{GM}Load.P821_Abverkauf_01,"MDD{GM}Appl.TransferMDDStatus
+",MDD{GM}Load.MP821A_PRE,abv.scr,Inserting into Target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Appl.TransferMDDProdukt,MDD{GM}Load.MP821A_PRE,abv.scr,Inserting into Target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Prod.Filiale,MDD{GM}Load.MP821A_PRE,abv.scr,Inserting into Target table
+MDD{GM}Appl.TransferMDDStatus,MDD{GM}Appl.TransferMDDStatus,MDD{GM}Load.MP821A_PRE,abv.scr,Updating certain fields in the target table
+MDD{GM}Load.P821_Korrektur_01,"MDD{GM}Appl.TransferMDDStatus
+",MDD{GM}Load.MP821A_PRE,abv.scr,Inserting into Target table
+MDD{GM}Load.P821_Korrektur_01,MDD{GM}Prod.Filiale,MDD{GM}Load.MP821A_PRE,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821A1,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821A1,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821A2,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821A2,abv.scr,Inserting into Log table
+MDD{GM}Prod.Siebensteller,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821A3,abv.scr,Inserting into Target table
+MDD{GM}Prod.Artikel,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821A3,abv.scr,Inserting into Target table
+MDD{GM}Prod.Artikel,MDD{GM}Prod.BoSS_Familie,MDD{GM}Load.MP821A3,abv.scr,Inserting into Target table
+MDD{GM}Prod.Artikel,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MP821A3,abv.scr,Inserting into Target table
+MDD{GM}Prod.Warensektor,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821A4,abv.scr,Inserting into Target table
+MDD{GM}Prod.Warengruppe,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821A4,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821B,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821B,abv.scr,Inserting into Log table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821B,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821C,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821C,abv.scr,Inserting into Log table
+MDD{GM}Prod.AngebotTyp,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821C,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821E,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821E,abv.scr,Inserting into Log table
+MDD{GM}Prod.PreisTyp,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821E,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821F,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821F,abv.scr,Inserting into Log table
+MDD{GM}Prod.PreisAusnahme,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821F,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821G1,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821G1,abv.scr,Inserting into Log table
+MDD{GM}Prod.TransaktionArt,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821G1,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821G2,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821G2,abv.scr,Inserting into Log table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821G2,abv.scr,Inserting into Target table
+MDD{GM}Load.MDDLoadLog,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821G3,abv.scr,Inserting into Log table
+MDD{GM}Load.MDDLoadLog,MDD{GM}Load.MDDError,MDD{GM}Load.MP821G3,abv.scr,Inserting into Log table
+MDD{GM}Prod.AngebotVerrechnung,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821G3,abv.scr,Inserting into Target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821G5,abv.scr,Inserting into Target table
+MDD{GM}Load.P821_EP,MDD{GM}Load.P821_EP,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Abverkauf_02,"MDD{GM}Load.P821_Abverkauf_01
+",MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Prod.Filiale,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Prod.Artikel,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.P821_EP,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Prod.Filiale,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821H,abv.scr,Updating certain fields in the target table
+MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Korrektur_02,"MDD{GM}Load.P821_Korrektur_01
+",MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Korrektur_02,MDD{GM}Prod.HistoryAbverkauf,MDD{GM}Load.MP821H,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Mon_Wanderer,MDD{GM}Load.P821_Mon_Wanderer,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Mon_Wanderer,"MDD{GM}Load.P821_Abverkauf_02
+
+",MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Mon_Wanderer,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_WGR_Mon_Wanderer,MDD{GM}Load.P821_WGR_Mon_Wanderer,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_WGR_Mon_Wanderer,"MDD{GM}Load.P821_Abverkauf_02
+
+",MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_WGR_Mon_Wanderer,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Gen_Wanderer,MDD{GM}Load.P821_Gen_Wanderer,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Gen_Wanderer,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Gen_Wanderer,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H2,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Bereich_Mon_Wanderer,MDD{GM}Load.P821_Bereich_Mon_Wanderer,MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Bereich_Mon_Wanderer,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Bereich_Mon_Wanderer,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Familie_Mon_Wanderer,MDD{GM}Load.P821_Familie_Mon_Wanderer,MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Familie_Mon_Wanderer,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Familie_Mon_Wanderer,MDD{GM}Prod.Artikel,MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Load.P821_Familie_Mon_Wanderer,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821H3,abv.scr,Deleting all entries from the table
+MDD{GM}Prod.HAB_Mon_SUM,"MDD{GM}Load.P821_Mon_Wanderer
+",MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Mon_SUM,MDD{GM}Prod.HAB_Mon_SUM,MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Gen_SUM,"MDD{GM}Load.P821_Gen_Wanderer
+",MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Gen_SUM,MDD{GM}Prod.HAB_Gen_SUM HAB,MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_WGR_Mon_SUM,"MDD{GM}Load.P821_WGR_Mon_Wanderer
+",MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_WGR_Mon_SUM,MDD{GM}Prod.HAB_WGR_Mon_SUM,MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Bereich_Mon_SUM,"MDD{GM}Load.P821_Bereich_Mon_Wanderer
+",MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Bereich_Mon_SUM,MDD{GM}Prod.HAB_Bereich_Mon_SUM,MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Familie_Mon_SUM,"MDD{GM}Load.P821_Familie_Mon_Wanderer
+",MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.MP821I,abv.scr,Inserting into Target table/Aggregation
+MDD{GM}Prod.HistoryAbverkauf,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HistoryAbverkauf,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_WGR_SUM,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_WGR_SUM,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_WS_SUM HAB,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_WS_SUM,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+HAB,"MDD{GM}Prod.HAB_WGR_Mon_SUM
+",MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+HAB,MDD{GM}Load.P821_WGR_Mon_Wanderer,MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+HAB,MDD{GM}Prod.HAB_Gen_SUM,MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+HAB,MDD{GM}Load.P821_Gen_Wanderer,MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+MDD{GM}Prod.HAB_Bereich_SUM,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_Bereich_SUM,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_Bereich_SUM,MDD{GM}Prod.Artikel,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+HAB,"MDD{GM}Prod.HAB_Bereich_Mon_SUM
+",MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+HAB,MDD{GM}Load.P821_Bereich_Mon_Wanderer,MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_Familie_SUM,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Prod.Artikel,MDD{GM}Load.MP821I,abv.scr,Merge into Target table
+HAB,"MDD{GM}Prod.HAB_Familie_Mon_SUM
+",MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+HAB,MDD{GM}Load.P821_Familie_Mon_Wanderer,MDD{GM}Load.MP821I,abv.scr,Updating the table based on different joining conditions
+MDD{GM}Prod.HistoryBestand,MDD{GM}Prod.HistoryBestand,MDD{GM}Load.MP821I,abv.scr,Deleting few entries from this table depending on certain conditions
+MDD{GM}Prod.HistoryBestand,MDD{GM}Load.STKC_CALC_STOCK,MDD{GM}Load.MP821I,abv.scr,Deleting few entries from this table depending on certain conditions
+MDD{GM}Prod.XFER_HAB_Pending,MDD{GM}Load.P821_Gen_Wanderer,MDD{GM}Load.MP821I,abv.scr,0
+MDD{GM}Prod.XFER_TBI_Pending,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,"MDD{GM}Load.P821_Abverkauf_02
+",MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Load.P821_Korrektur_02,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821I,abv.scr,Insert into Target table
+MDD{GM}Appl.AbgleichKontrolleWare,MDD{GM}Appl.AbgleichKontrolleWare,MDD{GM}Load.MP821I_POST,abv.scr,Deleting entries from the table
+MDD{GM}Appl.AbgleichKontrolleWare,"MDD{GM}Appl.TransferMDDStatus
+",MDD{GM}Load.MP821I_POST,abv.scr,Deleting entries from the table
+MDD{GM}Appl.AbgleichKontrolleWare,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MP821I_POST,abv.scr,Deleting entries from the table
+MDD{GM}Appl.TransferMDDProdukt,MDD{GM}Appl.TransferMDDProdukt,MDD{GM}Load.MP821I_POST,abv.scr,Deleting entries from the table
+MDD{GM}Appl.TransferMDDStatus,MDD{GM}Appl.TransferMDDStatus,MDD{GM}Load.MP821I_POST,abv.scr,Updating certain fields in the target table
+MDD{GM}Appl.TransferMDDStatus,MDD{GM}Appl.TransferMDDStatus,MDD{GM}Load.MP821I_POST,abv.scr,Updating certain fields in the target table
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Status_SPLIT,{MDDMGProd}.XFER_TBI_Status_SPLIT,MDD{GM}Load.MP821L_TBI,abv.scr,Updating the Target table
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,"MDD{GM}Prod.XFER_TBI_Pending
+",MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Prod.Filiale,MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Appl.TransferMDDStatus,MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Prod.HistoryAbverkauf,MDD{GM}Load.MP821L_TBI,abv.scr,Deleting based on certain conditions
+{MDDMGProd}.XFER_TBI_Status_SPLIT,"MDD{GM}Prod.XFER_TBI_Pending
+",MDD{GM}Load.MP821L_TBI,abv.scr,Updating the Target table
+{MDDMGProd}.XFER_TBI_Status_SPLIT,{MDDMGProd}.XFER_TBI_Abverkauf_SPLIT,MDD{GM}Load.MP821L_TBI,abv.scr,Updating the Target table
+MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Prod.XFER_TBI_Pending,MDD{GM}Load.MP821L_TBI,abv.scr,Insert into Target table
+MDDLoadLog,"MDDError
+",MM168A,abv.scr,Insert into Log table referencing the lookup table of Filiale 
+MDDLoadLog,M168,MM168A,abv.scr,Insert into Log table referencing the lookup table of Filiale
+M168,M168,MM168A,abv.scr,Updating a flag value
+MDDLoadLog,"MDDError
+",MM168B,abv.scr,Insert into Log table referencing the lookup table of Warengruppe
+MDDLoadLog,M168,MM168B,abv.scr,Insert into Log table referencing the lookup table of Warengruppe
+M168,M168,MM168B,abv.scr,Updating a flag value
+MDDLoadLog,"MDDError
+",MM168C,abv.scr,Insert into Log table referencing the lookup table of GenossKalender
+MDDLoadLog,M168,MM168C,abv.scr,Insert into Log table referencing the lookup table of GenossKalender
+M168,M168,MM168C,abv.scr,Updating a flag value
+MDDLoadLog,"MDDError
+",MM168D,abv.scr,Insert into Log table referencing the lookup table of Warengruppe
+MDDLoadLog,M168,MM168D,abv.scr,Insert into Log table referencing the lookup table of Warengruppe
+MDDLoadLog,"MDDError
+",MM168E,abv.scr,Insert into Log table referencing the lookup table of Artikel
+MDDLoadLog,M168,MM168E,abv.scr,Insert into Log table referencing the lookup table of Artikel
+MDDLoadLog,"MDDError
+",MM168F,abv.scr,Updating a flag value
+MDDLoadLog,M168,MM168F,abv.scr,Insert into Log table 
+M168,M168,MM168G,abv.scr,Delete entries from target tables based on certain flag value
+MDD{GM}Prod.Warensektor,M168,MM168G,abv.scr,Insert into target table
+MDD{GM}Prod.Warengruppe,M168,MM168G,abv.scr,Insert into target table
+MDD{GM}Prod.Siebensteller,M168,MM168G,abv.scr,Insert into target table
+MDD{GM}Prod.Artikel,"MDD{GM}Prod.Artikel
+",MM168G,abv.scr,Insert into target table
+MDD{GM}Prod.Artikel,MDD{GM}Prod.Genossenschaft,MM168G,abv.scr,Deleting values from based on conditions
+MDD{GM}Prod.M168_Buffer,MDD{GM}Prod.M168_Buffer,MM168H,abv.scr,Insert into target table
+MDD{GM}Prod.M168_Buffer,MDD{GM}Load.M168,MM168H,abv.scr,Insert into target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M168,MM168H,abv.scr,Insert into target table
+MDDLoadLog,"M844 
+",MM844A,abv.scr,Insert into Log table referencing the lookup table of Genossenschaft and Filiale
+MDDLoadLog,MDDError,MM844A,abv.scr,Insert into Log table referencing the lookup table of Genossenschaft and Filiale
+M844,M844,MM844A,abv.scr,Updating a flag value
+MDDLoadLog,"M844 
+",MM844B,abv.scr,Insert into Log table depending upon a condition
+MDDLoadLog,MDDError,MM844B,abv.scr,Insert into Log table depending upon a condition
+M844,M844,MM844B,abv.scr,Updating a flag value
+MDDLoadLog,"M844 
+",MM844C,abv.scr,Insert into Log table referencing the lookup table of GenossKalender
+MDDLoadLog,MDDError,MM844C,abv.scr,Insert into Log table referencing the lookup table of GenossKalender
+M844,M844,MM844C,abv.scr,Updating a flag value
+MDDLoadLog,"M844 
+",MM844D,abv.scr,Insert into Log table depending upon a condition
+MDDLoadLog,MDDError,MM844D,abv.scr,Insert into Log table depending upon a condition
+M844,M844,MM844D,abv.scr,Updating a flag value
+M844,M844,MM844E,abv.scr,Deleting from table based on flag value
+MDDLoadLog,"MDD{GM}Prod.M168_Buffer
+",MM844F,abv.scr,Insert into Target table
+MDDLoadLog,MDD{GM}Load.M844,MM844F,abv.scr,Insert into Target table
+MDDLoadLog,M844 ,MM844F,abv.scr,Insert into Target table
+MDDLoadLog,MDDError,MM844F,abv.scr,Insert into Target table
+M844_Faktura,MDD{GM}Load.M844,MM844G,abv.scr,Insert into Target table
+MDD{GM}Prod.HistoryFaktura,MDD{GM}Prod.HistoryFaktura,MM844H,abv.scr,Delete from Target table depending upon condition
+MDD{GM}Prod.HistoryFaktura,M844_Faktura,MM844H,abv.scr,Insert into target table
+MDD{GM}Prod.M168_Buffer,MDD{GM}Prod.M168_Buffer,MM844H,abv.scr,Delete from Target table depending upon condition
+MDD{GM}Prod.XFER_Faktura_Pending,M844_Faktura,MM844H,abv.scr,Insert into target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M844_Faktura,MM844H,abv.scr,Insert into target table
+MDD{GM}Load.T844_Processing,MDD{GM}Prod.XFER_Faktura_Pending,MDD{GM}Load.MT844A,abv.scr,Insert into target table
+MDD{GM}Load.T844_Faktura,MDD{GM}Prod.HistoryFaktura,MDD{GM}Load.MT844A,abv.scr,Insert into target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Load.MT844B,abv.scr,Deleting all entries from target table
+MDD{GM}Load.P821_Abverkauf_01,"MDD{GM}Load.T844_Faktura
+",MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Prod.Artikel,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Prod.Artikel_VEMenge,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Abverkauf_01,MDD{GM}Prod.Filiale,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Korrektur_01,MDD{GM}Load.P821_Korrektur_01,MDD{GM}Load.MT844B,abv.scr,Deleting all entries 
+MDD{GM}Load.P821_Korrektur_01,"MDD{GM}Load.T844_Processing
+",MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Korrektur_01,MDD{GM}Prod.Genossenschaft,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.P821_Korrektur_01,MDD{GM}Prod.Filiale,MDD{GM}Load.MT844B,abv.scr,Insert into target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M999Protocol,MDD{GM}Load.MT844C,abv.scr,Deleting all entries 
+MDD{GM}Load.M999Protocol,MDD{GM}Load.T844_Faktura,MDD{GM}Load.MT844C,abv.scr,Insert into target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.P821_Abverkauf_02,MDD{GM}Load.MT844C,abv.scr,Insert into target table
+MDD{GM}Prod.XFER_Faktura_Logbook,MDD{GM}Prod.XFER_Faktura_Logbook,MDD{GM}Load.MT844C,abv.scr,Deleting all entries 
+MDD{GM}Prod.XFER_Faktura_Logbook,MDD{GM}Load.T844_Faktura,MDD{GM}Load.MT844C,abv.scr,Insert into target table
+MDD{GM}Prod.XFER_Faktura_Pending,MDD{GM}Prod.XFER_Faktura_Pending,MDD{GM}Load.MT844C,abv.scr,Deleting some entries dependingon conditions
+MDDLoadLog,"M812
+",MM812A,best.scr,Insert into Log table referencing the lookup table of Artikel
+MDDLoadLog,MDDError,MM812A,best.scr,Insert into Log table referencing the lookup table of Artikel
+M812,M812,MM812A,best.scr,Updating table for a flag value 
+MDDLoadLog,"M812
+",MM812B,best.scr,Insert into Log table referencing the lookup table of Filiale
+MDDLoadLog,MDDError,MM812B,best.scr,Insert into Log table referencing the lookup table of Filiale
+M812,M812,MM812B,best.scr,Updating table for a flag value 
+MDDLoadLog,"M812
+",MM812C,best.scr,Insert into Log table referencing the lookup table of GenossKalender
+MDDLoadLog,MDDError,MM812C,best.scr,Insert into Log table referencing the lookup table of GenossKalender
+M812,M812,MM812C,best.scr,Updating table for a flag value 
+M812,M812,MM812C,best.scr,Delete from table based on ceratin flag value
+M812,M812,MM812C,best.scr,Updating table for a flag value 
+M812,M812,MM812C,best.scr,Updating table for a flag value 
+M812,M812,MM812C,best.scr,Insert into Target table
+MDD{GM}Prod.HistoryBestandIST,MDD{GM}Prod.HistoryBestandIST,MM812D,best.scr,Delete from table based on a condition
+MDD{GM}Prod.HistoryBestandIST,M812,MM812D,best.scr,Insert into Target table
+MDD{GM}Prod.HistoryBestand,MDD{GM}Prod.HistoryBestand,MM812D,best.scr,Delete from table based on condition
+MDD{GM}Prod.HistoryBestand,MDD{GM}Load.STKC_CALC_STOCK,MM812D,best.scr,Insert into Target table
+MDD{GM}Prod.HistoryBestandKorr,MDD{GM}Prod.HistoryBestandKorr,MM812D,best.scr,Delete from table based on condition
+MDD{GM}Prod.HistoryBestandKorr,MDD{GM}Load.STKC_CALC_STOCK_CORR,MM812D,best.scr,Insert into Target table
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M812,MM812D,best.scr,Insert into Target table
+MDD{GM}Load.M812,"MDD{GM}Load.M813
+",MM813A,best.scr,Insert into Target table based on certain conditions and aggregations
+MDD{GM}Load.M812,MDD{GM}Prod.Artikel,MM813A,best.scr,Insert into Target table based on certain conditions and aggregations
+MDD{GM}Load.M812,MDD{GM}Prod.Filiale,MM813A,best.scr,Insert into Target table based on certain conditions and aggregations
+MDD{GM}Load.M812,MDD{GM}Load.M812,MM813B,best.scr,Delete from table based on condition
+MDD{GM}Load.M812,MDD{GM}Load.M812,MM813C,best.scr,Delete from table based on condition
+X813_EXTR,"MDD{GM}Load.X813
+",MX813A,best.scr,Insert into Target table based on certain conditions and aggregations
+X813_EXTR,MDD{GM}Prod.Artikel,MX813A,best.scr,Insert into Target table based on certain conditions and aggregations
+X813_EXTR,MDD{GM}Prod.HistoryBestandIST,MX813A,best.scr,Insert into Target table based on certain conditions and aggregations
+X813_EXTR,MDD{GM}Prod.HistoryBestand,MX813A,best.scr,Insert into Target table based on certain conditions and aggregations
+MDD{GM}Load.M999Protocol,MDD{GM}Load.X813_EXTR,MX813A,best.scr,Insert into Target table
+MDD{GM}Load.BoSS_Stamm,{MDDMGProd}.Boss_Stamm,MBOSS_01,stamm.scr,Insert
+MDD{GM}Load.M999Protocol,MDD{GM}Load.BoSS_Stamm,MBOSS_01,stamm.scr,Insert
+MDD{GM}Load.MDDLoadLog,"Boss_Stamm
+",MBOSS_02,stamm.scr,Insert & Update for Stufes 1-5 and check for duplicates
+MDD{GM}Load.MDDLoadLog,"
+MDDError",MBOSS_02,stamm.scr,Insert & Update for Stufes 1-5 and check for duplicates
+Boss_Stamm_Welt,Boss_Stamm,MBOSS_03,stamm.scr,Insert for Stufen_Indikator 1
+Boss_Stamm_Bereich,Boss_Stamm,MBOSS_03,stamm.scr,Insert for Stufen_Indikator 2
+Boss_Stamm_Verkaufsektor,Boss_Stamm,MBOSS_03,stamm.scr,Insert for Stufen_Indikator 3
+Boss_Stamm_Thema,Boss_Stamm,MBOSS_03,stamm.scr,Insert for Stufen_Indikator 4
+Boss_Stamm_Familie,Boss_Stamm,MBOSS_03,stamm.scr,Insert for Stufen_Indikator 5
+Boss_Stamm_Familie,"MDD{GM}Prod.Artikel
+",MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Familie,MDD{GM}Prod.Boss_Familie,MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Thema,"MDD{GM}Load.Boss_Stamm_Familie
+",MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Thema,MDD{GM}Prod.Boss_Thema,MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Verkaufsektor,"MDD{GM}Load.Boss_Stamm_Familie
+",MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Verkaufsektor,MDD{GM}Prod.Boss_Verkaufsektor,MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Bereich,"MDD{GM}Load.Boss_Stamm_Familie
+",MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Bereich,MDD{GM}Prod.Boss_Bereich,MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Welt,"MDD{GM}Load.Boss_Stamm_Familie
+",MBOSS_04,stamm.scr,Insert
+Boss_Stamm_Welt,MDD{GM}Prod.Boss_Welt,MBOSS_04,stamm.scr,Insert
+MDD{GM}Prod.Boss_Welt,Boss_Stamm_Welt,MBOSS_06,stamm.scr,Insert and delete for where condition of B2000WeltID
+MDD{GM}Prod.Boss_Bereich,Boss_Stamm_Bereich,MBOSS_06,stamm.scr,Insert for where condition of B2000BereichID
+MDD{GM}Prod.BoSS_Verkaufsektor,Boss_Stamm_Verkaufsektor,MBOSS_06,stamm.scr,Insert for where condition of B2000VKSID
+MDD{GM}Prod.BoSS_Thema,Boss_Stamm_Thema,MBOSS_06,stamm.scr,Insert for where condition of B2000ThemaID
+MDD{GM}Prod.BoSS_Familie,Boss_Stamm_Familie,MBOSS_06,stamm.scr,Insert for where condition of B2000FamilieID
+{MDDMGProd}.Zentrale_Daten_Status,MDD{GM}Prod.Genossenschaft,MBOSS_06,stamm.scr,Insert
+MDD{GM}Load.M999Protocol,MDD{GM}Load.BoSS_Stamm,MBOSS_06,stamm.scr,Insert
+MDD{GM}Prod.Style,"{MDDMGProd}.Artikel_Stamm_Label
+",MARTS_01,stamm.scr,Merge new data into target table while matching few condition
+MDD{GM}Prod.Style,MDD{GM}Prod.Style ,MARTS_01,stamm.scr,Merge new data into target table while matching few condition
+MDD{GM}Prod.MarkeKlasse,"{MDDMGProd}.Artikel_Stamm_Marke
+",MARTS_02,stamm.scr,MERGE/UPSERT Look-Up Tabelle MarkeKlasse
+MDD{GM}Prod.MarkeKlasse,MDD{GM}Prod.MarkeKlasse,MARTS_02,stamm.scr,MERGE/UPSERT Look-Up Tabelle MarkeKlasse
+MDD{GM}Prod.MarkeStrategie,"{MDDMGProd}.Artikel_Stamm_Marke
+",MARTS_03,stamm.scr,MERGE/UPSERT Look-Up Tabelle MarkeStrategie
+MDD{GM}Prod.MarkeStrategie,MDD{GM}Prod.MarkeStrategie,MARTS_03,stamm.scr,MERGE/UPSERT Look-Up Tabelle MarkeStrategie
+MDD{GM}Prod.Marke,"{MDDMGProd}.Artikel_Stamm_Marke
+",MARTS_04,stamm.scr,MERGE/UPSERT Look-Up Tabelle Marke
+MDD{GM}Prod.Marke,MDD{GM}Prod.Marke,MARTS_04,stamm.scr,MERGE/UPSERT Look-Up Tabelle Marke
+MDD{GM}Prod.PreisSegment,"{MDDMGProd}.Artikel_Stamm
+",MARTS_05,stamm.scr,MERGE/UPSERT Tabelle PreisSegment
+MDD{GM}Prod.PreisSegment,MDD{GM}Prod.PreisSegment,MARTS_05,stamm.scr,MERGE/UPSERT Tabelle Artikel_VEMenge
+MDD{GM}Prod.Artikel_VEMenge,"{MDDMGProd}.Artikel_Stamm
+",MARTS_06,stamm.scr,MERGE/UPSERT Tabelle Artikel_VEMenge
+MDD{GM}Prod.Artikel_VEMenge,MDD{GM}Prod.Genossenschaft,MARTS_06,stamm.scr,MERGE/UPSERT Tabelle Artikel_VEMenge
+MDD{GM}Prod.Artikel_VEMenge,MDD{GM}Prod.Artikel_VEMenge,MARTS_06,stamm.scr,MERGE/UPSERT Tabelle Artikel_VEMenge
+MDD{GM}Load.ARTS_01,"{MDDMGProd}.Artikel_Stamm
+",MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.ARTS_01,MDD{GM}Prod.Genossenschaft,MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.ARTS_02,"MDD{GM}Load.ARTS_01
+",MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.ARTS_02,MDD{GM}Prod.Genossenschaft,MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.ARTS_03,"MDD{GM}Load.ARTS_01
+",MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.ARTS_03,MDD{GM}PROD.Artikel,MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Load.M999Protocol,MDD{GM}Load.ARTS_02,MARTS_07,stamm.scr,Load data of the master data into the work table ARTS
+MDD{GM}Prod.Warengruppe,MDD{GM}Load.ARTS_02,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDDLoadLog,"MDD{GM}Load.ARTS_02
+",MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDDLoadLog,MDDError,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Load.ARTS_02,MDD{GM}Prod.ArtikelTyp,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Prod.ArtikelTyp,MDD{GM}Prod.BoSS_Familie,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Load.ARTS_02,MDD{GM}Prod.Bewirtschaftung,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Load.ARTS_02,MDD{GM}Prod.Marke,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Prod.Bewirtschaftung,MDD{GM}Prod.Style,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
+MDD{GM}Load.BUMB_Umnummer_Artikel,"MDD{GM}Prod.Artikel
+",MARTS_09,stamm.scr,
+MDD{GM}Load.BUMB_Umnummer_Artikel,MDD{GM}Load.ARTS_02,MARTS_09,stamm.scr,
+MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID ,MDD{GM}Prod.HistoryAbverkauf,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
+MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID , MDD{GM}Load.BUMB_Umnummer_Artikel,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
+MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID ,MDD{GM}Prod.HistoryBelieferung,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
+MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID , MDD{GM}Load.BUMB_Umnummer_Artikel,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
+MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID ,MDD{GM}Prod.HistoryAbverkauf ,MBUMB_ALTNEU_PI_JOIN,stamm.scr,"Insert data if no of artikel is large i.e. < 10,000 using Primary Index Join"
+MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID ,MDD{GM}Load.BUMB_Umnummer_Artikel,MBUMB_ALTNEU_PI_JOIN,stamm.scr,"Insert data if no of artikel is large i.e. < 10,000 using Primary Index Join"
+MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID ,MDD{GM}Prod.HistoryBelieferung,MBUMB_ALTNEU_PI_JOIN,stamm.scr,"Insert data if no of artikel is large i.e. < 10,000 using Primary Index Join"
+MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID , MDD{GM}Load.BUMB_Umnummer_Artikel,MBUMB_ALTNEU_PI_JOIN,stamm.scr,"Insert data if no of artikel is large i.e. < 10,000 using Primary Index Join"
+MDD{GM}Load.BUMB_HAB_Bereich_Delta ,MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID,MBUMB_DELTA_BEREICH,stamm.scr,Insert
+MDD{GM}Load.BUMB_HAB_Bereich_MON_Delta ,MDD{GM}Load.BUMB_HAB_Bereich_Delta,MBUMB_DELTA_BEREICH,stamm.scr,Insert
+MDD{GM}Load.BUMB_BEL_Bereich_Delta ,MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID,MBUMB_DELTA_BEREICH,stamm.scr,Insert
+MDD{GM}Load.BUMB_BEL_Bereich_Mon_Delta ,MDD{GM}Load.BUMB_BEL_Bereich_Delta,MBUMB_DELTA_BEREICH,stamm.scr,Insert
+MDD{GM}Load.BUMB_HAB_Familie_Delta    ,MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID,MDD{GM}Load.MBUMB_DELTA_FAMILIE,stamm.scr,Insert
+MDD{GM}Load.BUMB_HAB_Familie_MON_Delta    ,MDD{GM}Load.BUMB_HAB_Familie_Delta    ,MDD{GM}Load.MBUMB_DELTA_FAMILIE,stamm.scr,Insert
+MDD{GM}Load.BUMB_BEL_Familie_Delta ,MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID,MDD{GM}Load.MBUMB_DELTA_FAMILIE,stamm.scr,Insert
+MDD{GM}Load.BUMB_BEL_Familie_MON_Delta ,MDD{GM}Load.BUMB_BEL_Familie_Delta,MDD{GM}Load.MBUMB_DELTA_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.ArtikelStyle,MDD{GM}Load.ARTS_02,MARTS_10,stamm.scr,Insert for Style1ID to Style5ID
+MDD{GM}Prod.ArtikelStyle,MDD{GM}Prod.ArtikelStyle,MARTS_10,stamm.scr,Insert for Style1ID to Style5ID
+M999Protocol,ARTS_03,MARTS_10,stamm.scr,Insert
+M999Protocol,ARTS_02,MARTS_10,stamm.scr,Insert
+M999Protocol, MDD{GM}Prod.Artikel,MARTS_10,stamm.scr,Insert
+MDD{GM}Prod.Artikel,ARTS_02,MARTS_10,stamm.scr,Insert and Update
+MDD{GM}Prod.Artikel,MDD{GM}Prod.Artikel,MARTS_10,stamm.scr,Insert and Update
+HAB,MDD{GM}Prod.HAB_Bereich_SUM,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Update
+HAB,MDD{GM}Load.BUMB_HAB_Bereich_Delta ,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Update
+MDD{GM}Prod.HAB_Bereich_SUM,MDD{GM}Load.BUMB_HAB_Bereich_Delta,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+MDD{GM}Prod.HAB_Bereich_SUM,MDD{GM}Prod.HAB_Bereich_SUM,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+HAB, MDD{GM}Prod.HAB_Bereich_Mon_SUM,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Update
+HAB,MDD{GM}Load.BUMB_HAB_Bereich_Mon_Delta,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Update
+MDD{GM}Prod.HAB_Bereich_Mon_SUM,MDD{GM}Load.BUMB_HAB_Bereich_Mon_Delta,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+MDD{GM}Prod.HAB_Bereich_Mon_SUM,MDD{GM}Prod.HAB_Bereich_Mon_SUM,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+MDD{GM}Prod.BEL_Bereich_SUM,MDD{GM}Load.BUMB_BEL_Bereich_Delta,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+MDD{GM}Prod.BEL_Bereich_Mon_SUM,MDD{GM}Load.BUMB_BEL_Bereich_Mon_Delta,MBUMB_UMBUCHEN_BEREICH,stamm.scr,Insert
+HAB, MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Update
+HAB,MDD{GM}Load.BUMB_HAB_Familie_Delta,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Update
+MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Load.BUMB_HAB_Familie_Delta ,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Prod.HAB_Familie_SUM,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+HAB,MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Update
+HAB,MDD{GM}Load.BUMB_HAB_Familie_Mon_Delta,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Update
+MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.BUMB_HAB_Familie_Mon_Delta,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.BEL_Familie_SUM,MDD{GM}Load.BUMB_BEL_Familie_Delta ,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.BEL_Familie_Mon_SUM,MDD{GM}Load.BUMB_BEL_Familie_Mon_Delta,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
+MDD{GM}Prod.Siebensteller,MDD{GM}Prod.Artikel,MARTS_11,stamm.scr,
+MDDLoadLog,"M891
+",MF891_01,stamm.scr,Insert
+MDDLoadLog,MDDError,MF891_01,stamm.scr,Insert
+MDD{GM}Load.M891_Distribution,"MDD{GM}Load.M891
+",MF891_02,stamm.scr,Insert
+MDD{GM}Load.M891_Distribution,MDD{GM}Prod.EXTR_HAB_Distribution_Item,MF891_02,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution_Group,"M891
+",MF891_03,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution_Group,M891_Distribution,MF891_03,stamm.scr,Insert
+MDDLoadLog,M892,MF892_01,stamm.scr,Insert
+MDDLoadLog,"
+MDDError",MF892_01,stamm.scr,Insert
+MDD{GM}Load.M892_Distribution_Group,"MDD{GM}Prod.Genossenschaft
+",MF892_02,stamm.scr,Insert
+MDD{GM}Load.M892_Distribution_Group,MDD{GM}Load.M892,MF892_02,stamm.scr,Insert
+MDD{GM}Load.M892_Distribution_Group,MDD{GM}Prod.BEL_WS_SUM,MF892_02,stamm.scr,Insert
+MDD{GM}Load.M892_Distribution_Group,MDD{GM}Prod.HAB_WS_SUM,MF892_02,stamm.scr,Insert
+MDD{GM}Load.M892_Distribution,MDD{GM}Load.M892_Distribution_Group,MF892_02,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution_Item,MDDError,MF892_03,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution_Item,M892,MF892_03,stamm.scr,Insert and delete
+MDD{GM}Prod.EXTR_HAB_Distribution_Group,M892_Distribution_Group,MF892_03,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution_Group,"
+MDD{GM}Prod.EXTR_HAB_Distribution_Group",MF892_03,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution,M892_Distribution,MF892_03,stamm.scr,Insert
+MDD{GM}Prod.EXTR_HAB_Distribution,"
+MDD{GM}Prod.EXTR_HAB_Distribution",MF892_03,stamm.scr,Insert
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M892,MF892_03,stamm.scr,Insert
+MDDLoadLog,"M110
+",MM110,stamm.scr,Insert
+MDDLoadLog,MDDError,MM110,stamm.scr,Insert
+MDD{GM}Prod.Marke,"M110
+",MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.Marke,MDD{GM}Prod.Marke,MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.Style,"M110
+",MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.Style,MDD{GM}Prod.Style,MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.SortimentsName,"M110
+",MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.SortimentsName,MDD{GM}Prod.SortimentsName,MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.SortimentsModul,"M110
+",MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.SortimentsModul,MDD{GM}Prod.SortimentsModul,MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.Bewirtschaftung,"M110
+",MM110,stamm.scr,"Update, Insert"
+MDD{GM}Prod.Bewirtschaftung,MDD{GM}Prod.Bewirtschaftung,MM110,stamm.scr,"Update, Insert"
+MDDLoadLog,"M210
+",MM210,stamm.scr,"Insert, Delete"
+MDDLoadLog,"
+MDDError",MM210,stamm.scr,"Insert, Delete"
+MDDLoadLog,MDDError,MM210,stamm.scr,"Insert, Delete"
+MDDLoadLog,"F102
+",MF102A,stamm.scr,Insert for error id F151
+MDDLoadLog,MDDError,MF102A,stamm.scr,Insert for error id F152
+MDDLoadLog,"F102
+",MF102B,stamm.scr,Insert for error id F102
+MDDLoadLog,MDDError,MF102B,stamm.scr,Insert for error id F102
+MDDLoadLog,"F102
+",MF102C,stamm.scr,Insert for error id F101
+MDDLoadLog,MDDError,MF102C,stamm.scr,Insert for error id F101
+MDDLoadLog,"F102
+",MF102D,stamm.scr,Insert for error id F104
+MDDLoadLog,MDDError,MF102D,stamm.scr,Insert for error id F104
+MDDLoadLog,"F102
+",MF102E,stamm.scr,Insert for error id F153
+MDDLoadLog,MDDError,MF102E,stamm.scr,Insert for error id F153
+MDDLoadLog,"F102
+",MF102F,stamm.scr,Insert for error id F154
+MDDLoadLog,MDDError,MF102F,stamm.scr,Insert for error id F154
+MDD{GM}Prod.PendenzUmnumer,F102,MF102G,stamm.scr,Insert 
+MDDLoadLog,"F202
+",MF202A,stamm.scr, Insert with error Id F152
+MDDLoadLog,MDDError,MF202A,stamm.scr, Insert with error Id F152
+F202,MDD{GM}Prod.PendenzUmnumer,MF202A,stamm.scr,Update
+MDDLoadLog,"F202
+",MF202B,stamm.scr, Insert with error Id F102
+MDDLoadLog,MDDError,MF202B,stamm.scr, Insert with error Id F102
+F202,MDD{GM}Prod.Artikel,MF202B,stamm.scr,Update
+MDDLoadLog,"F202
+",MF202C,stamm.scr, Insert with error Id F101
+MDDLoadLog,MDDError,MF202C,stamm.scr, Insert with error Id F101
+F202,MDD{GM}Prod.Artikel,MF202C,stamm.scr,Update
+MDDLoadLog,"F202
+",MF202D,stamm.scr, Insert with error Id F104
+MDDLoadLog,MDDError,MF202D,stamm.scr, Insert with error Id F104
+F202,MDD{GM}Prod.Warengruppe,MF202D,stamm.scr,Update
+MDDLoadLog,"F202
+",MF202E,stamm.scr, Insert with error Id F153
+MDDLoadLog,MDDError,MF202E,stamm.scr, Insert with error Id F153
+F202,MDD{GM}Prod.PendenzUmnumer ,MF202E,stamm.scr,Update
+MDDLoadLog,"F202
+",MF202F,stamm.scr, Insert with error Id F154
+MDDLoadLog,MDDError,MF202F,stamm.scr, Insert with error Id F154
+MDD{GM}Prod.PendenzUmnumer,MDD{GM}Load.F202,MF202G,stamm.scr,Update
+MDDLoadLog,"F302
+",MF302A,stamm.scr, Insert with error Id F152
+MDDLoadLog,MDDError,MF302A,stamm.scr, Insert with error Id F152
+F302,MDD{GM}Prod.PendenzUmnumer,MF302A,stamm.scr,Update
+MDD{GM}Prod.PendenzUmnumer,MDD{GM}Load.F302,MF302B,stamm.scr,Delete
+MDD{GM}Load.M999Protocol,MDD{GM}Load.F302,MF302B,stamm.scr,Insert
+MDDLoadLog,"M310
+",MM310A,stamm.scr,Insert for Error Id F146
+MDDLoadLog,MDDError,MM310A,stamm.scr,Insert for Error Id F146
+MDDLoadLog,"M310
+",MM310B,stamm.scr,"Insert for Error Id F138,  F207"
+MDDLoadLog,MDDError,MM310B,stamm.scr,"Insert for Error Id F138,  F207"
+M310,MDD{GM}Prod.Marke,MM310B,stamm.scr,Update for Error Id F138
+M310,MDD{GM}Prod.Artikel,MM310B,stamm.scr,Update for Error Id F207
+MDDLoadLog,"M310
+",MM310C,stamm.scr,"Insert for Error Id F140,F208"
+MDDLoadLog,MDDError,MM310C,stamm.scr,"Insert for Error Id F140,F208"
+M310,MDD{GM}Prod.Style,MM310C,stamm.scr,Update for Error Id F140
+M310,MDD{GM}Prod.ArtikelStyle,MM310C,stamm.scr,Update for Error ID F208
+MDDLoadLog,"M310
+",MM310D,stamm.scr,"Insert for Error Id F142, F209"
+MDDLoadLog,MDDError,MM310D,stamm.scr,"Insert for Error Id F142, F210"
+M310,MDD{GM}Prod.SortimentsName,MM310D,stamm.scr,Update for Error Id F142
+M310,MDD{GM}Prod.Artikel,MM310D,stamm.scr,Update for Error Id F209
+MDDLoadLog,"M310
+",MM310E,stamm.scr,"Insert for Error Id F144, F210"
+MDDLoadLog,MDDError,MM310E,stamm.scr,"Insert for Error Id F144, F210"
+M310,MDD{GM}Prod.SortimentsModul,MM310E,stamm.scr,update for Error Id F144
+M310,MDD{GM}Prod.Artikel,MM310E,stamm.scr,Update for Error Id  F210
+MDDLoadLog,"M310
+",MM310F,stamm.scr,"Insert for Error Id F136, F211"
+MDDLoadLog,MDDError,MM310F,stamm.scr,"Insert for Error Id F136, F211"
+M310,MDD{GM}Prod.Bewirtschaftung,MM310F,stamm.scr,Update for Error Id F136
+M310,MDD{GM}Prod.Artikel,MM310F,stamm.scr,Update for Error Id F211
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M310,MM310F,stamm.scr,Insert
+MDDLoadLog,M893,MF893_01,stamm.scr,"Insert for error id F122, F183, F102, F001"
+MDDLoadLog,"
+MDDError
+",MF893_01,stamm.scr,"Insert for error id F122, F183, F102, F002"
+MDDLoadLog,MDD{GM}Prod.Filiale,MF893_01,stamm.scr,"Insert for error id F122, F183, F102, F003"
+M893,MDD{GM}Prod.Filiale,MF893_01,stamm.scr,Update for error id F122
+MDDLoadLog,"
+MDD{GM}Prod.Artikel",MF893_01,stamm.scr,"Insert for error id F122, F183, F102, F003"
+M893,MDD{GM}Prod.Artikel,MF893_01,stamm.scr,Update for error id F102
+MDD{GM}Prod.LieferantArtikel,M893,MF893_02,stamm.scr,Update
+MDD{GM}Prod.LieferantArtikel,"
+MDD{GM}Prod.LieferantArtikel",MF893_02,stamm.scr,Insert
+MDD{GM}Load.M999Protocol,MDD{GM}Load.M893,MF893_02,stamm.scr,Insert
+MDD{GM}Extract.M814_{OWNER},"DatumVon
+",MM814_DATE_{OWNER},m814macr{master}.sql,Update
+MDD{GM}Extract.M814_{OWNER},DatumBis,MM814_DATE_{OWNER},m814macr{master}.sql,Update
+MDD{GM}Extract.M814_{OWNER},WgHistoryDatum,MM814_DATE_{OWNER},m814macr{master}.sql,Update
+MDD{GM}Extract.M814_{OWNER},ArtikelEANCode,MM814_DATE_{OWNER},m814macr{master}.sql,Update
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_SAVE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_SAVE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel_XTC_SAVE,MM814_SAVE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel,MM814_SAVE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_SAVE_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_SAVE_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_SAVE_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER} ,M814_{OWNER},MM814_BoSS_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+
+",MM814_BoSS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_BoSS_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_Mon_FTS_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M814_LineNumber_{OWNER},MDD{GM}Prod.Artikel,MM814_Mon_FTS_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_Mon_FTS_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete,Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel,MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},MDD{GM}Prod.HAB,MM814_Mon_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_Mon_{OWNER},m814macr{master}.sql,"Delete,Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_Mon_{OWNER},m814macr{master}.sql,"Delete,Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_Mon_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_Mon_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_Mon_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.HAB_Mon_SUM,MM814_Mon_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_FTS_{OWNER},m814macr{master}.sql,"Delete,Insert"
+M824_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_FTS_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel,MM814_SST_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_SST_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_SST_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale ,MM814_SST_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel_HIST,MM814_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER}  ,MM814_{OWNER},m814macr{master}.sql,Insert
+M814_LineNumber_{OWNER},M814_{OWNER},MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Artikel_{OWNER},MDD{GM}Prod.Artikel_HIST,MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Distribution_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Distribution_{OWNER},MDD{GM}Prod.EXTR_HAB_Distribution,MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Distribution_{OWNER},MDD{GM}Extract.M814_{OWNER},MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+MDD{GM}Extract.M814_Distribution_{OWNER},MDD{GM}Prod.EXTR_HAB_Distribution,MM814_ASS_PRE_{OWNER},m814macr{master}.sql,"Delete, Insert"
+M824_{OWNER},"MDD{GM}Extract.M814_{OWNER}
+",MM814_ASS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Historyabverkauf,MM814_ASS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_ASS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},MDD{GM}Prod.Filiale,MM814_ASS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},M814_Distribution_{OWNER},MM814_ASS_{OWNER},m814macr{master}.sql,Insert
+M824_{OWNER},M824_{OWNER},Table is FastExport to a file using script m814expo{master}.fxp,m814macr{master}.sql,FastExport
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
