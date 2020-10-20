@@ -1,6 +1,4 @@
 Target,Source,Macro,Script,Notes
-MDDLoadLog,"M167
-",MM167A,bel.scr,Insert
 MDDLoadLog,MDDError,MM167A,bel.scr,Insert
 MDDLoadLog,MDD{GM}Prod.Artikel,MM167A,bel.scr,Insert
 MDDLoadLog,MDD{GM}Prod.Filiale,MM167B,bel.scr,Insert
@@ -536,8 +534,8 @@ MDD{GM}Load.ARTS_02,MDD{GM}Prod.Bewirtschaftung,MARTS_08,stamm.scr,"Check differ
 MDD{GM}Load.ARTS_02,MDD{GM}Prod.Marke,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
 MDD{GM}Prod.Bewirtschaftung,MDD{GM}Prod.Style,MARTS_08,stamm.scr,"Check different RI conditions for SectorGrouppe, ArtikelTyp, BoSSID, Bewirtschaftung, Marke, Style (1-5), generate missing Siebensteller, SortimentsName, SortimentsModul, ZuschlagArt, MArtikelTyp, Mmasseinheit, PreisSegment, PendenzUmnumer"
 MDD{GM}Load.BUMB_Umnummer_Artikel,"MDD{GM}Prod.Artikel
-",MARTS_09,stamm.scr,
-MDD{GM}Load.BUMB_Umnummer_Artikel,MDD{GM}Load.ARTS_02,MARTS_09,stamm.scr,
+",MARTS_09,stamm.scr,Insert
+MDD{GM}Load.BUMB_Umnummer_Artikel,MDD{GM}Load.ARTS_02,MARTS_09,stamm.scr,Insert
 MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID ,MDD{GM}Prod.HistoryAbverkauf,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
 MDD{GM}Load.BUMB_HAB_BoSS_AltNeuID , MDD{GM}Load.BUMB_Umnummer_Artikel,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
 MDD{GM}Load.BUMB_BEL_BoSS_AltNeuID ,MDD{GM}Prod.HistoryBelieferung,MBUMB_ALTNEU_FTS,stamm.scr,"Insert data , if no of artikel is large i.e. > 10,000 using Full Table Scan"
@@ -581,7 +579,7 @@ MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.BUMB_HAB_Familie_Mon_Delta,MDD{GM}Lo
 MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Prod.HAB_Familie_Mon_SUM,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
 MDD{GM}Prod.BEL_Familie_SUM,MDD{GM}Load.BUMB_BEL_Familie_Delta ,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
 MDD{GM}Prod.BEL_Familie_Mon_SUM,MDD{GM}Load.BUMB_BEL_Familie_Mon_Delta,MDD{GM}Load.MBUMB_UMBUCHEN_FAMILIE,stamm.scr,Insert
-MDD{GM}Prod.Siebensteller,MDD{GM}Prod.Artikel,MARTS_11,stamm.scr,
+MDD{GM}Prod.Siebensteller,MDD{GM}Prod.Artikel,MARTS_11,stamm.scr,Insert
 MDDLoadLog,"M891
 ",MF891_01,stamm.scr,Insert
 MDDLoadLog,MDDError,MF891_01,stamm.scr,Insert
@@ -795,39 +793,3 @@ M824_{OWNER},MDD{GM}Extract.M814_Artikel_{OWNER},MM814_ASS_{OWNER},m814macr{mast
 M824_{OWNER},MDD{GM}Prod.Filiale,MM814_ASS_{OWNER},m814macr{master}.sql,Insert
 M824_{OWNER},M814_Distribution_{OWNER},MM814_ASS_{OWNER},m814macr{master}.sql,Insert
 M824_{OWNER},M824_{OWNER},Table is FastExport to a file using script m814expo{master}.fxp,m814macr{master}.sql,FastExport
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
